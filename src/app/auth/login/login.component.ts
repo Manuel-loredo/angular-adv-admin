@@ -80,7 +80,7 @@ export class LoginComponent implements OnInit {
         (googleUser) => {
 
           const id_token = googleUser.getAuthResponse().id_token;
-            //console.log(id_token);
+            console.log(id_token);
           this.usuarioService.loginGoogle(id_token)
                              .subscribe(resp => {
                                //Navegar al Dashboard  
